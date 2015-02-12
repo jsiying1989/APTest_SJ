@@ -1,0 +1,80 @@
+****************************************************************************************
+		  - Project Report -
+****************************************************************************************
+PART ONE
+   - Time arrangement
+
+Feb 5
+	Start project. 
+	1. Reading instruction, go through all resources, mark points that needs to be done.
+	2. List all requirements and plan a sequence of them.
+	3. Meet problems.
+		a. When I go through the project resource, I found this is Gradle project.
+			- install gradle plugin and tools into Eclipse <Still can not import>
+			- change ADT into Android Studio. <no issues at first>
+			- start coding and cannot test the project 
+			  <"android studio compilation failed see the compiler error output for details">
+			- since it cost me a long time, I decide to create new project in Eclipse and copy all code into the new project  
+
+
+Feb 6 and Feb 7 
+	Update SDK and tools in Eclipse Juno. I met three big issues.
+	1. API 20 and 19 reversion failure. 
+		- finding issue and fixing it by close all project in Eclipse
+	2. android_support_v4 can not be delete/rewrite/...
+		- remove from project and re-add <Failure>
+		- find another error-- no resource found in appcompat_v7/.../...
+	3. appcompat_v7 keep shows errors
+		- delete appcompat_v7 then new a project to generate it. <Failure>
+		- remove appcompat_v7 from properties then re-add in project <Failure>
+		- comment all errors in appcomapt_v7 <Failure>
+		- select API 21/20/19/14 as target <Failure>
+		- set target = android-21 and minSDK=21 in Manifest then solve the problem
+	4. Start doing the code part
+
+Feb 8 
+	Continue coding step by step based on my requirements sequence and the requirement. 
+	Test all parts of application.
+
+Feb 9
+	Create project report and send email
+
+
+PART TWO
+   - Requirment point list and sequence
+	1. MainActivity
+		a. Layout - imagebutton, textview
+	2. LoginActivity
+		a. layout - imagebutton, edittext
+		b. activity - Asyn Post request, get response code, success/fail
+			i. AlertDialog - success <OK return Main>
+				       - fail <OK stay in Login>
+			ii. edittext not null
+	3. Animation
+		a. layout - imageview, imagebutton,textview
+		b. activity - settext, alpha and rotate 
+	4. Chat
+		a. layout - celldata add imageview, edit layout
+		b. adpter - add imageview code, set image size and shape
+	5. ToolBar
+		a. style - color
+		b. back button (in all activity)
+	6. Fonts
+	7. WelcomePage (handle/add an activity)
+		a. layout and activity(3 seconds)
+
+PART THREE
+   - Project result
+	1. Doing all activities and layouts sucessful
+	2. Failure at Header text and Chat fonts
+	3. Add name on Welcome Page
+	4. Add rotate in Animation
+   - Total Time: Feb 5 ~ Feb 9
+
+
+
+
+
+
+
+
